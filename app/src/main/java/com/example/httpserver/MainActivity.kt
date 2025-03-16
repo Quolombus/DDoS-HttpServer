@@ -139,8 +139,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun getStatus(): String {
         val sb = StringBuilder()
-        sb.appendLine("abc")
-        sb.appendLine("def")
+        sb.appendLine(getGlobalStats())
+        sb.appendLine()
+        sb.appendLine(getDetailedStats())
         return sb.toString()
     }
 
